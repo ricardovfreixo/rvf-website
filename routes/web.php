@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'SiteController@homepage');
+Route::get('/', function(){
+	return view('master');
+});

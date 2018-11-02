@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('/latest',function(){
+	return \App\Post::where('published_at','<',\Carbon\Carbon::now())->limit(10)->get();
+});
+
+
+Route::get('/users', function () {
+    return factory('App\User', 10)->make();
+});

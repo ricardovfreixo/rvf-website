@@ -14002,10 +14002,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_App__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_App___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__views_App__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Hello__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Hello___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_Hello__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Home__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_Home__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Home__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_Home__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_About__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_About___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_About__);
 
 __webpack_require__(14);
 
@@ -14023,11 +14023,11 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     routes: [{
         path: '/',
         name: 'home',
-        component: __WEBPACK_IMPORTED_MODULE_4__views_Home___default.a
+        component: __WEBPACK_IMPORTED_MODULE_3__views_Home___default.a
     }, {
-        path: '/hello',
-        name: 'hello',
-        component: __WEBPACK_IMPORTED_MODULE_3__views_Hello___default.a
+        path: '/about',
+        name: 'about',
+        component: __WEBPACK_IMPORTED_MODULE_4__views_About___default.a
     }]
 });
 
@@ -50022,8 +50022,8 @@ var render = function() {
           _vm._v("Home")
         ]),
         _vm._v(" |\n        "),
-        _c("router-link", { attrs: { to: { name: "blog" } } }, [
-          _vm._v("Hello World")
+        _c("router-link", { attrs: { to: { name: "about" } } }, [
+          _vm._v("About me")
         ])
       ],
       1
@@ -50043,80 +50043,15 @@ if (false) {
 }
 
 /***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(45)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/views/Hello.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7e78f37a", Component.options)
-  } else {
-    hotAPI.reload("data-v-7e78f37a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("hello")])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7e78f37a", module.exports)
-  }
-}
-
-/***/ }),
+/* 44 */,
+/* 45 */,
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(55)
 /* template */
 var __vue_template__ = __webpack_require__(47)
 /* template functional */
@@ -50181,6 +50116,85 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(54)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/views/About.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2995bb7e", Component.options)
+  } else {
+    hotAPI.reload("data-v-2995bb7e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("p", [_vm._v("About me")])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2995bb7e", module.exports)
+  }
+}
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports) {
+
+//
+//
+//
 
 /***/ })
 /******/ ]);

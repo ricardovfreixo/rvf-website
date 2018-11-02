@@ -2,7 +2,7 @@
     <div>
         <p>
             <router-link :to="{ name: 'home' }">Home</router-link> |
-            <router-link :to="{ name: 'blog' }">Hello World</router-link>
+            <router-link :to="{ name: 'about' }">About me</router-link>
         </p>
 
         <div class="container">
