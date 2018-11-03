@@ -8,11 +8,8 @@
 	</head>
 
 	<body>
-		@include('partials.header')
 
-		<div class="container">
-			<div id="app"><App /></div>
-		</div>
+		<div id="app"><App /></div>
 
 		@include('partials.footer')
 

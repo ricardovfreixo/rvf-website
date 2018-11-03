@@ -1,5 +1,6 @@
 <template>
-	<div>
+	<div class="text-center">
+		<img src="https://via.placeholder.com/980x250">
 		<h1 class="title">{{post.title}}</h1>
 		<p>{{post.body}}</p>
 	</div>
