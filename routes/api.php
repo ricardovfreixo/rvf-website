@@ -32,3 +32,6 @@ Route::get('/users', function () {
 });
 
 
+Route::get('/article/{slug}',function($slug){
+	return \App\Post::where('slug',$slug)->first();
+});

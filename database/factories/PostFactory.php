@@ -8,7 +8,7 @@ $factory->define(App\Post::class, function (Faker $faker) {
         'title' => $title,
         'slug' => str_slug($title),
         'sinopse' => $faker->text(),
-        'body' => $faker->text(500),
+        'body' => $faker->text(1500),
         'published_at' => $faker->dateTime(),
     ];
 });
