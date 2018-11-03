@@ -8,12 +8,18 @@ Vue.use(VueRouter)
 
 import App from './views/App'
 import Home from './views/Home'
+import NotFound from './views/NotFound'
 import About from './views/About'
 import Article from './views/Article'
 
 const router = new VueRouter({
     mode: 'history',
     routes: [
+        {
+            path: '/notfound',
+            name: 'notfound',
+            component: NotFound,
+        },
         {
             path: '/',
             name: 'home',

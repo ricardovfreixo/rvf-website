@@ -32,6 +32,4 @@ Route::get('/users', function () {
 });
 
 
-Route::get('/article/{slug}',function($slug){
-	return \App\Post::where('slug',$slug)->first();
-});
+Route::get('/article/{slug}','SpaController@article');

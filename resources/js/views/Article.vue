@@ -17,6 +17,9 @@
 		async created() {
 			try {
 			  const response = await axios.get('/api/article' + this.$route.path)
+			  if(!response.data.hasOwnProperty('title')) {
+			  	this.$router.replace('/notfound')
+			  }
 			  this.post = response.data
 			} catch (e) {
 			  this.errors.push(e)
