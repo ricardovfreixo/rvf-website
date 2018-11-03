@@ -19,10 +19,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('/latest',function(){
-	return \App\Post::where('published_at','<',\Carbon\Carbon::now())->limit(10)->get();
+	return \App\Post::select(['title','slug','sinopse','published_at'])
+		->where('published_at','<',\Carbon\Carbon::now())
+		->orderBy('published_at','desc')
+		->limit(10)
+		->get();
 });
 
 
 Route::get('/users', function () {
     return factory('App\User', 10)->make();
 });
+
+
